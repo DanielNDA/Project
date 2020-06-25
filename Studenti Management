@@ -1,0 +1,37 @@
+Studenti Management.
+
+Data Stores : - baza de date "studenti" in MySQL Workbench
+			
+Data Access Layer : -pachetul dao -> clasele->StudentiDao - metode CRUD 
+											->ProfesoriDao - metode
+											->CursDao - metode
+											->SaliDao - metode
+											->OrarDao - metode
+											->SessionFactorySingleton - setare conexiune DB
+					-pachetul model -> clasele : ->Studenti
+												 ->Profesori
+											     ->Cursuri
+												 ->Sali
+												 ->Orar
+												 ->membrii fiecarei clase + adnotari + relatiile intre tabele conform diagrama + set,get
+												 
+ 
+						
+Presentation Layer: - pachetul ui -> clasa : UserUi - unde o sa afiseze in consola urmatorul meniu:
+														1.Student Management  -> 1.Add student
+																			     2.View student
+																	             3.Delete student
+																	             4.Update student
+														2.Profesori -> 1.Add profesor
+																	   2.View profesor
+																	   3.Delete profesor
+												
+														3.Cursuri   -> 1.Add curs
+																	   2.View curs
+																	   3.Delete curs
+														4.Orar      -> 1.Add ore
+																	   2.View ore
+																	   3.Delete ore	
+																	   4.Update ore
+														5.Sala		-> 1.Add sala
+																	   2.View sala
